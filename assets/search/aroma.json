@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "aromatherapy essential oil bottles massage spa flat lay with flowers"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "aromatherapy essential oil bottles massage spa flat lay with flowers",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/beaabbfcccd7.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "1065px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/438d27cef5e7.jpg",
+      "caption": "",
+      "source": "Pure Spa Direct",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8e5059f89683.jpg",
+      "caption": "",
+      "source": "Bee Inspired Goods",
+      "original_width": "1080px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c28beadfcd49.jpg",
+      "caption": "",
+      "source": "eBay",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/eec85edb1d98.jpg",
+      "caption": "",
+      "source": "Lavender Life Company",
+      "original_width": "1800px",
+      "original_height": "1800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/aaa52af55114.jpg",
+      "caption": "",
+      "source": "Etsy",
+      "original_width": "1122px",
+      "original_height": "1402px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1f672b24ee9b.webp",
+      "caption": "",
+      "source": "Monsuri",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/936246f74161.jpg",
+      "caption": "",
+      "source": "New Directions Aromatics",
+      "original_width": "1080px",
+      "original_height": "1620px"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "pouring massage oil bottle aromatherapy spa treatment bright"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "pouring massage oil bottle aromatherapy spa treatment bright",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6d859df764fa.jpg",
+      "caption": "",
+      "source": "Pure Spa Direct",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/fec1bb2b9ebb.webp",
+      "caption": "",
+      "source": "SaFiSpa",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/94dc274dbb9e.jpg",
+      "caption": "",
+      "source": "100% Pure",
+      "original_width": "2600px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/75187b105ede.jpg",
+      "caption": "",
+      "source": "Etsy",
+      "original_width": "3000px",
+      "original_height": "3000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7e4ea3c9170a.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "894px",
+      "original_height": "894px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/24b0b1530a83.webp",
+      "caption": "",
+      "source": "Palmer's",
+      "original_width": "1500px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9f9e2d5acb2d.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "962px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/885db5401847.png",
+      "caption": "",
+      "source": "Summer Solace Tallow",
+      "original_width": "800px",
+      "original_height": "1200px"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "tropical spa interior white minimal plants serene"
+✅ Got 7 images
+{
+  "success": true,
+  "query": "tropical spa interior white minimal plants serene",
+  "count": 7,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45f96803c55d.jpg",
+      "caption": "",
+      "source": "stockcake.com",
+      "original_width": "1344px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/79cee75491da.jpg",
+      "caption": "",
+      "source": "www.afloral.com",
+      "original_width": "1920px",
+      "original_height": "1097px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5e87e734532b.jpg",
+      "caption": "",
+      "source": "stockcake.com",
+      "original_width": "1344px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/772f83fb8650.jpg",
+      "caption": "",
+      "source": "stockcake.com",
+      "original_width": "1344px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/645bb35b4712.jpg",
+      "caption": "",
+      "source": "www.dreamstime.com",
+      "original_width": "1066px",
+      "original_height": "1690px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bdff80fc412f.jpg",
+      "caption": "",
+      "source": "stockcake.com",
+      "original_width": "1344px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/30e6e502f7e3.jpg",
+      "caption": "",
+      "source": "www.leonandgeorge.com",
+      "original_width": "1360px",
+      "original_height": "1700px"
+    }
+  ]
+}

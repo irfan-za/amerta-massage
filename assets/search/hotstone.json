@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "hot stone massage treatment on back luxury spa"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "hot stone massage treatment on back luxury spa",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a196aaaada83.jpg",
+      "caption": "",
+      "source": "Belleza Salon and Spa",
+      "original_width": "768px",
+      "original_height": "1152px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/eedcb77a0fe2.jpg",
+      "caption": "",
+      "source": "spasway.com",
+      "original_width": "2048px",
+      "original_height": "1366px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8d0adf76b8a2.jpg",
+      "caption": "",
+      "source": "eBay",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d5d39ea2148f.jpg",
+      "caption": "",
+      "source": "Deluxe Therapeutic Massage and Spa",
+      "original_width": "1600px",
+      "original_height": "667px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c792ae95cdf3.jpeg",
+      "caption": "",
+      "source": "- Lakes Luxury Spa",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8fc1c192bdd6.jpeg",
+      "caption": "",
+      "source": "Massage of Santa Fe",
+      "original_width": "2500px",
+      "original_height": "1669px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bdc72625663a.jpg",
+      "caption": "",
+      "source": "123RF",
+      "original_width": "1300px",
+      "original_height": "867px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d138f688be22.jpg",
+      "caption": "",
+      "source": "Dreamstime",
+      "original_width": "1600px",
+      "original_height": "1156px"
+    }
+  ]
+}
