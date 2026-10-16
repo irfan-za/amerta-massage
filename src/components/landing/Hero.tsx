@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
@@ -21,7 +18,9 @@ export function Hero() {
   return (
     <section id="beranda" className="relative overflow-hidden pt-[72px]">
       {/* faint frangipani watermark */}
-      <Image
+      <img
+        loading="lazy"
+        decoding="async"
         src="/assets/frangipani-emerald.png"
         alt=""
         width={420}
@@ -128,13 +127,12 @@ export function Hero() {
             aria-hidden="true"
           />
           <div className="relative aspect-[4/5] overflow-hidden rounded-b-[2rem] rounded-t-[999px] shadow-[0_40px_80px_-40px_rgba(16,38,31,0.45)]">
-            <Image
+            <img
+              loading="eager" fetchPriority="high"
+              decoding="async"
               src="/images/hero.jpg"
               alt="Terapis Amerta memberikan pijat Bali di vila dengan pemandangan hutan tropis"
-              fill
-              priority
-              sizes="(max-width: 1024px) 92vw, 520px"
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
 

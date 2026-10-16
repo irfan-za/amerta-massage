@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
 import { SectionHeader, Reveal } from "./Reveal";
@@ -17,26 +14,28 @@ export function About() {
         {/* Image collage */}
         <Reveal className="relative mx-auto w-full max-w-[500px]">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-44px_rgba(16,38,31,0.5)]">
-            <Image
+            <img
+              loading="lazy"
+              decoding="async"
               src="/images/about-bath.jpg"
               alt={t.imgAlt[lang]}
-              fill
-              sizes="(max-width: 1024px) 92vw, 500px"
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
           <div className="absolute -bottom-10 -right-4 hidden w-44 overflow-hidden rounded-2xl border-4 border-cream shadow-xl sm:block lg:-right-10 lg:w-52">
             <div className="relative aspect-square">
-              <Image
+              <img
+                loading="lazy"
+                decoding="async"
                 src="/images/about-ritual.jpg"
                 alt="Ritual pijat kaki tradisional Bali"
-                fill
-                sizes="208px"
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
           </div>
-          <Image
+          <img
+            loading="lazy"
+            decoding="async"
             src="/assets/frangipani-emerald.png"
             alt=""
             width={56}

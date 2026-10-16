@@ -1,7 +1,4 @@
-"use client";
-
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
 import { waLink } from "@/lib/wa";
@@ -45,7 +42,9 @@ export function Navbar() {
       >
         {/* Brand */}
         <a href="#beranda" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <Image
+          <img
+            loading="lazy"
+            decoding="async"
             src="/assets/frangipani-emerald.png"
             alt="Logo Amerta Massage"
             width={34}

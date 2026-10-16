@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy, services } from "@/lib/i18n";
 import { formatIDR } from "@/lib/wa";
@@ -30,12 +27,12 @@ export function Services() {
                 aria-label={`${svc.name[lang]} — ${t.viewDetail[lang]}`}
               >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-line bg-sage">
-                  <Image
+                  <img
+                    loading="lazy"
+                    decoding="async"
                     src={svc.img}
                     alt={svc.imgAlt[lang]}
-                    fill
-                    sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 380px"
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />
                   {svc.popular ? (
                     <span className="absolute left-4 top-4 rounded-full bg-cream/95 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-pine shadow-sm backdrop-blur">

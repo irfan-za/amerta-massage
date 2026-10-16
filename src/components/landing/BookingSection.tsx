@@ -1,7 +1,4 @@
-"use client";
-
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy, services } from "@/lib/i18n";
 import { formatIDR, waLink } from "@/lib/wa";
@@ -40,7 +37,7 @@ export function BookingSection() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !slug || !date || !time || !location.trim()) {
+    if (!name.trim() || !svc || !dur || !date || !time || !location.trim()) {
       toast.error(t.errorRequired[lang]);
       return;
     }
@@ -54,7 +51,7 @@ export function BookingSection() {
       t.msgHeader[lang],
       "",
       `• ${lang === "id" ? "Nama" : "Name"}: ${name.trim()}`,
-      `• ${t.msgService[lang]}: ${svc!.name[lang]} — ${dur!.minutes} ${copy.servicesSection.perMin[lang]} (${formatIDR(dur!.price, lang)})`,
+      `• ${t.msgService[lang]}: ${svc.name[lang]} — ${dur.minutes} ${copy.servicesSection.perMin[lang]} (${formatIDR(dur.price, lang)})`,
       `• ${t.msgDate[lang]}: ${date} · ${time} WITA`,
       `• ${t.msgLocation[lang]}: ${location.trim()}`,
       `• ${t.msgPref[lang]}: ${prefLabel}`,
@@ -99,12 +96,12 @@ export function BookingSection() {
 
           {/* decorative image */}
           <Reveal delay={0.18} className="relative mt-8 hidden aspect-[16/9] overflow-hidden rounded-[1.75rem] lg:block">
-            <Image
+            <img
+              loading="lazy"
+              decoding="async"
               src="/images/about-minimal.jpg"
               alt="Ruang tenang dengan tanaman hijau — suasana sesi pijat di tempat Anda"
-              fill
-              sizes="460px"
-              className="object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </Reveal>
         </div>

@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./fonts/Fraunces-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+
+  /* Amerta palette — Jungle Minimal */
+  --color-cream: #fbfaf6;
+  --color-ink: #12261f;
+  --color-pine: #0c3b2e;
+  --color-pine-deep: #0a3227;
+  --color-brass: #a9814f;
+  --color-brasslight: #c9a264;
+  --color-sage: #f2f4ec;
+  --color-line: #e5e7da;
+  --color-moss: #5c6b62;
+
+  --animate-marquee: marquee 36s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-line outline-brass/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream font-sans text-ink;
+    margin: 0;
+  }
+  ::selection {
+    background: rgba(201, 162, 100, 0.35);
+    color: #12261f;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

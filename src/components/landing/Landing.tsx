@@ -1,5 +1,3 @@
-"use client";
-
 import { LangProvider } from "./LangProvider";
 import { Navbar } from "./Navbar";
 import { Hero } from "./Hero";

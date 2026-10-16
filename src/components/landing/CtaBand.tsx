@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
@@ -15,7 +12,9 @@ export function CtaBand() {
   return (
     <section className="px-5 pb-24 sm:px-8 lg:pb-32">
       <Reveal className="relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-pine-deep px-8 py-16 text-center sm:px-12 lg:py-20">
-        <Image
+        <img
+          loading="lazy"
+          decoding="async"
           src="/assets/frangipani-cream.png"
           alt=""
           width={340}
@@ -23,7 +22,9 @@ export function CtaBand() {
           aria-hidden="true"
           className="pointer-events-none absolute -left-24 -top-24 opacity-[0.06]"
         />
-        <Image
+        <img
+          loading="lazy"
+          decoding="async"
           src="/assets/frangipani-cream.png"
           alt=""
           width={260}

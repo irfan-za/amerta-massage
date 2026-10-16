@@ -1,5 +1,3 @@
-"use client";
-
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
 import { SectionHeader, Reveal } from "./Reveal";

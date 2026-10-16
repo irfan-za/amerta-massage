@@ -206,9 +206,6 @@ export const services: Service[] = [
   },
 ];
 
-type Pair = { id: string; en: string };
-type PairArr = { id: string[]; en: string[] };
-
 export const copy = {
   nav: {
     services: { id: "Layanan", en: "Services" },
@@ -251,7 +248,7 @@ export const copy = {
         "Same-day bookings available",
         "Open daily 08.00–22.00 WITA",
       ],
-    } as PairArr,
+    },
   },
   servicesSection: {
     index: "01",
@@ -304,11 +301,11 @@ export const copy = {
         ["Hygiene without compromise", "Freshly laundered & pressed linen per client. Sterilized tools. Pure essential oils, never diluted."],
         ["Authentic, not just comfortable", "Original Balinese technique passed down generations, combined with modern therapy science."],
       ],
-    } as { id: [string, string][]; en: [string, string][] },
+    },
     stats: {
       id: [["3.200+", "sesi selesai"], ["4,9/5", "rating klien"], ["8", "terapis senior"], ["±60'", "waktu tiba"]],
       en: [["3,200+", "sessions completed"], ["4.9/5", "client rating"], ["8", "senior therapists"], ["±60'", "arrival time"]],
-    } as { id: [string, string][]; en: [string, string][] },
+    },
     imgAlt: { id: "Mandi bunga di vila tropis Bali", en: "Flower bath in a tropical Balinese villa" },
   },
   how: {
@@ -328,7 +325,7 @@ export const copy = {
         ["Therapist arrives at your place", "Massage table, fresh linen, and your chosen oil — all brought. Just prepare a quiet room."],
         ["Enjoy & recover", "Session done? Pay on the spot: cash, transfer, or QRIS. No deposit."],
       ],
-    } as PairArr,
+    },
     note: { id: "Respon rata-rata 4 menit · Buka setiap hari 08.00–22.00 WITA", en: "Average reply 4 minutes · Open daily 08.00–22.00 WITA" },
   },
   booking: {
@@ -397,7 +394,7 @@ export const copy = {
         ["Booked the Couple's Ritual for our anniversary. Our villa instantly became a private spa.", "Ayu & Fajar", "Umalas"],
         ["Foot reflexology after hiking Mount Batur was an absolute lifesaver. Highly recommended.", "Nanda K.", "Canggu"],
       ],
-    } as { id: [string, string, string][]; en: [string, string, string][] },
+    },
   },
   coverage: {
     kicker: { id: "Area Layanan", en: "Service Area" },
@@ -428,7 +425,7 @@ export const copy = {
         ["What is the cancellation policy?", "Free cancellation up to 2 hours before the session. Once the therapist is on the way, a Rp 50,000 transport fee applies."],
         ["Is it safe for pregnancy or medical conditions?", "We have therapists trained for prenatal and special conditions. Please mention your condition when booking so safe techniques and positions can be prepared."],
       ],
-    } as PairArr,
+    },
   },
   cta: {
     title: { id: "Tubuh Anda sudah bekerja keras hari ini.", en: "Your body has worked hard today." },

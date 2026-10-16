@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
 import { SITE, WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
@@ -25,7 +22,9 @@ export function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2.5">
-            <Image
+            <img
+              loading="lazy"
+              decoding="async"
               src="/assets/frangipani-emerald.png"
               alt="Logo Amerta Massage"
               width={34}

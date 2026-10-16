@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";

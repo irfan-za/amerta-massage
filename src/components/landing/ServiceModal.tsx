@@ -1,7 +1,4 @@
-"use client";
-
 import { useEffect, useMemo } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
@@ -85,12 +82,12 @@ export function ServiceModal() {
           >
             {/* image header */}
             <div className="relative h-52 shrink-0 sm:h-60">
-              <Image
+              <img
+                loading="lazy"
+                decoding="async"
                 src={service.img}
                 alt={service.imgAlt[lang]}
-                fill
-                sizes="(max-width: 640px) 100vw, 672px"
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
               <button

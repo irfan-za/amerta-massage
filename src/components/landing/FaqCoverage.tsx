@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useState } from "react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
@@ -63,12 +60,12 @@ export function FaqCoverage() {
         <Reveal delay={0.12}>
           <div className="relative overflow-hidden rounded-[2rem] border border-line bg-sage/60">
             <div className="relative h-44 sm:h-52">
-              <Image
+              <img
+                loading="lazy"
+                decoding="async"
                 src="/images/gallery-gazebo.jpg"
                 alt="Paviliun pijat di taman tropis Bali"
-                fill
-                sizes="(max-width: 1024px) 92vw, 560px"
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sage via-sage/20 to-transparent" />
             </div>

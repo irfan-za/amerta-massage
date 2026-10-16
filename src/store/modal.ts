@@ -1,5 +1,3 @@
-"use client";
-
 import { create } from "zustand";
 import type { Service } from "@/lib/i18n";
 
