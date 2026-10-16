@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useLang } from "./LangProvider";
 import { copy, services } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { formatIDR, waLink } from "@/lib/wa";
 import { SectionHeader, Reveal } from "./Reveal";
 import { WhatsAppIcon } from "./icons";
@@ -99,7 +100,7 @@ export function BookingSection() {
             <img
               loading="lazy"
               decoding="async"
-              src="/images/about-minimal.jpg"
+              src={assetUrl("/images/about-minimal.jpg")}
               alt="Ruang tenang dengan tanaman hijau — suasana sesi pijat di tempat Anda"
               className="absolute inset-0 h-full w-full object-cover"
             />

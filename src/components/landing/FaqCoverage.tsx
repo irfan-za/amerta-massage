@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { SectionHeader, Reveal } from "./Reveal";
 import { SITE, WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
 import { waLink } from "@/lib/wa";
@@ -63,7 +64,7 @@ export function FaqCoverage() {
               <img
                 loading="lazy"
                 decoding="async"
-                src="/images/gallery-gazebo.jpg"
+                src={assetUrl("/images/gallery-gazebo.jpg")}
                 alt="Paviliun pijat di taman tropis Bali"
                 className="absolute inset-0 h-full w-full object-cover"
               />

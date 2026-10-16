@@ -1,7 +1,8 @@
 import { useEffect, useMemo } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { formatIDR, waLink } from "@/lib/wa";
 import { useServiceModal } from "@/store/modal";
 import { WhatsAppIcon, CheckIcon, StarIcon } from "./icons";
@@ -85,7 +86,7 @@ export function ServiceModal() {
               <img
                 loading="lazy"
                 decoding="async"
-                src={service.img}
+                src={assetUrl(service.img)}
                 alt={service.imgAlt[lang]}
                 className="absolute inset-0 h-full w-full object-cover"
               />

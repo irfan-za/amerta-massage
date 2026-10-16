@@ -14,7 +14,7 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "framer-motion": "^12.23.2",
+    "motion": "^14.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sonner": "^2.0.6",

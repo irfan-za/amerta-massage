@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { business, faq } from "./src/lib/seo.ts";
 
 export default defineConfig({
+  base: "./",
   plugins: [
     react(),
     tailwindcss(),

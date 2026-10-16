@@ -1,5 +1,6 @@
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { SectionHeader, Reveal } from "./Reveal";
 import { CheckIcon } from "./icons";
 import { SITE } from "@/lib/site";
@@ -17,7 +18,7 @@ export function About() {
             <img
               loading="lazy"
               decoding="async"
-              src="/images/about-bath.jpg"
+              src={assetUrl("/images/about-bath.jpg")}
               alt={t.imgAlt[lang]}
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -27,7 +28,7 @@ export function About() {
               <img
                 loading="lazy"
                 decoding="async"
-                src="/images/about-ritual.jpg"
+                src={assetUrl("/images/about-ritual.jpg")}
                 alt="Ritual pijat kaki tradisional Bali"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -36,7 +37,7 @@ export function About() {
           <img
             loading="lazy"
             decoding="async"
-            src="/assets/frangipani-emerald.png"
+            src={assetUrl("/assets/frangipani-emerald.png")}
             alt=""
             width={56}
             height={56}

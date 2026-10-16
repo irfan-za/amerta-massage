@@ -1,5 +1,6 @@
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { SITE, WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
 import { waLink } from "@/lib/wa";
 import { WhatsAppIcon } from "./icons";
@@ -25,7 +26,7 @@ export function Footer() {
             <img
               loading="lazy"
               decoding="async"
-              src="/assets/frangipani-emerald.png"
+              src={assetUrl("/assets/frangipani-emerald.png")}
               alt="Logo Amerta Massage"
               width={34}
               height={34}

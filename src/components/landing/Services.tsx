@@ -1,5 +1,6 @@
 import { useLang } from "./LangProvider";
 import { copy, services } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { formatIDR } from "@/lib/wa";
 import { useServiceModal } from "@/store/modal";
 import { SectionHeader, Reveal } from "./Reveal";
@@ -30,7 +31,7 @@ export function Services() {
                   <img
                     loading="lazy"
                     decoding="async"
-                    src={svc.img}
+                    src={assetUrl(svc.img)}
                     alt={svc.imgAlt[lang]}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />

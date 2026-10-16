@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Amerta Massage",
   legalName: "Amerta Massage Bali",
-  domain: "https://amertamassagebali.com",
+  domain: "https://templates.jasawebsite.id/amerta-massage",
   waNumber: "6281234567890", // placeholder — ganti dengan nomor asli
   waDisplay: "+62 812-3456-7890",
   email: "hello@amertamassage.id",

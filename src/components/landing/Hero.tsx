@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { waLink } from "@/lib/wa";
 import { WhatsAppIcon, StarIcon } from "./icons";
 import { SITE, WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
@@ -21,7 +22,7 @@ export function Hero() {
       <img
         loading="lazy"
         decoding="async"
-        src="/assets/frangipani-emerald.png"
+        src={assetUrl("/assets/frangipani-emerald.png")}
         alt=""
         width={420}
         height={420}
@@ -130,7 +131,7 @@ export function Hero() {
             <img
               loading="eager" fetchPriority="high"
               decoding="async"
-              src="/images/hero.jpg"
+              src={assetUrl("/images/hero.jpg")}
               alt="Terapis Amerta memberikan pijat Bali di vila dengan pemandangan hutan tropis"
               className="absolute inset-0 h-full w-full object-cover"
             />

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amertamassagebali.com/sitemap.xml
+Sitemap: https://templates.jasawebsite.id/amerta-massage/sitemap.xml

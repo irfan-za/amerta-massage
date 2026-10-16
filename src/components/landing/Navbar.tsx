@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { waLink } from "@/lib/wa";
 import { WhatsAppIcon } from "./icons";
 import { SITE, WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
@@ -45,7 +46,7 @@ export function Navbar() {
           <img
             loading="lazy"
             decoding="async"
-            src="/assets/frangipani-emerald.png"
+            src={assetUrl("/assets/frangipani-emerald.png")}
             alt="Logo Amerta Massage"
             width={34}
             height={34}

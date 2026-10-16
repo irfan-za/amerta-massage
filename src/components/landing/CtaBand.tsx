@@ -1,5 +1,6 @@
 import { useLang } from "./LangProvider";
 import { copy } from "@/lib/i18n";
+import { assetUrl } from "@/lib/asset";
 import { Reveal } from "./Reveal";
 import { WA_GREETING_EN, WA_GREETING_ID } from "@/lib/site";
 import { waLink } from "@/lib/wa";
@@ -15,7 +16,7 @@ export function CtaBand() {
         <img
           loading="lazy"
           decoding="async"
-          src="/assets/frangipani-cream.png"
+          src={assetUrl("/assets/frangipani-cream.png")}
           alt=""
           width={340}
           height={340}
@@ -25,7 +26,7 @@ export function CtaBand() {
         <img
           loading="lazy"
           decoding="async"
-          src="/assets/frangipani-cream.png"
+          src={assetUrl("/assets/frangipani-cream.png")}
           alt=""
           width={260}
           height={260}

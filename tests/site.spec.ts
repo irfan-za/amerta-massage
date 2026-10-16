@@ -33,7 +33,7 @@ test("static build loads content, styles, fonts, images, and SEO without errors"
   });
   expect(await page.evaluate(() => document.fonts.check('16px "Inter"'))).toBe(true);
   expect(await page.evaluate(() => document.fonts.check('16px "Fraunces"'))).toBe(true);
-  const hero = page.locator('img[src="/images/hero.jpg"]');
+  const hero = page.locator('img[src$="/images/hero.jpg"]');
   await expect(hero).toHaveCSS("object-fit", "cover");
   const imageBox = await hero.boundingBox();
   if (!imageBox) throw new Error("Missing hero image layout");
